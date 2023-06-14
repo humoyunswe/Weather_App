@@ -1,0 +1,50 @@
+{% extends 'weather/base.html' %}
+
+{% block title %}
+        <title>Wheather_App</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="space"></div>
+    <div class="container">
+        <div class="card">
+            {% if 'cloudy' in xolat %}
+                <img src="https://cdn.dribbble.com/users/186452/screenshots/1733462/weather-4.gif" class="img_1">
+                <style>
+                    body {
+                        background-color: #CD6C05;
+                    }
+                </style>
+            {% elif xolat == 'Heavy rain' %}
+                <img src="https://cdn.dribbble.com/users/186452/screenshots/1733456/weather-3.gif" class="img_1">
+                <style>
+                    body {
+                        background-color: #4A457C;
+                    }
+                </style>
+            {% elif 'rain' in xolat %}
+                <img src="https://cdn.dribbble.com/users/186452/screenshots/1732130/media/eb06cb2aca3e613205a1247515cdcb78.gif" class="img_1">
+                <style>
+                    body {
+                        background-color: #3279AB;
+                    }
+                </style>
+            {% elif xolat == 'Sunny' %}
+                <img src="https://cdn.dribbble.com/users/186452/screenshots/1732132/media/851c3eac790f952f3c5f7de859ae38a3.gif" class="img_1">
+                <style>
+                    body {
+                        background-color: #218CB6;
+                    }
+                </style>
+            {% else %}
+                <img src="https://i.pinimg.com/originals/42/48/1b/42481b86231db442b095a7bd763e9d86.jpg" class="img_1">
+            {% endif %}
+            <p><i class="fa-sharp fa-solid fa-location-dot"></i><strong>  {{ city }}</strong></p>
+            <h1>{{ sana }}</h1>
+            <h1><i class="fa-solid fa-cloud"></i>  {{ xarorat }}</h1>
+            <p class="info"><i class="fa-solid fa-thumbtack"></i> Bugun:  {{ xolat }}</p>
+            <p class="info"><i class="fa-solid fa-wind"></i> Shamol tezligi:  {{ shamol }}</p>
+        </div>
+    </div>
+{% endblock content %}
+

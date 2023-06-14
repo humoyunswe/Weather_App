@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+}
+
+body {
+    background-color: #db752c;
+}
+
+.space {
+    height: 100px;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    margin: 0 auto;
+    height: 460px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px black;
+}
+
+.fa-sharp.fa-solid.fa-location-dot {
+    color: red;
+    margin-left: 4px;
+}
+
+.fa-solid.fa-cloud {
+    color: lightblue;
+}
+
+.fa-solid.fa-thumbtack {
+    color: red;
+}
+
+.fa-solid.fa-wind {
+    color: saddlebrown;
+}
+
+.info {
+    color: lightseagreen;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    margin-top: 18px;
+    margin-left: 5px;
+}
+
+h1 {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.img_1 {
+    width: 251px;
+    height: 188.25px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    object-fit: cover;
+}
